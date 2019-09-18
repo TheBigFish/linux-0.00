@@ -15,10 +15,10 @@ ubuntu: 16.04
 head.s  
 第九行增加 `.code32`
 
-Makefile
+Makefile  
 第四行改为 `AS	=as --32`
 
-新增 bochsrc-0.00.bxrc,内容为：
+新增 bochsrc-0.00.bxrc,内容为：  
 ```
 romimage: file=$BXSHARE/BIOS-bochs-latest
 vgaromimage: file=$BXSHARE/VGABIOS-lgpl-latest
@@ -28,11 +28,11 @@ boot: a
 log: bochsout.txt
 ```
 ## 编译
-sudo apt-get install bin86
+sudo apt-get install bin86  
 make
 
 ## 运行
-bochs -f bochsrc-0.00.bxrc
-回车
-c
+bochs -f bochsrc-0.00.bxrc  
+回车  
+c  
 
